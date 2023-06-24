@@ -26,7 +26,8 @@
       "matchDatasources": ["docker"],
       "matchUpdateTypes": ["patch", "minor"],
       "groupSlug": "upgrade-build-image-deps",
-      "addLabels": ["upgrade-build-image"]
+      "addLabels": ["upgrade-build-image"],
+      "extends": ["schedule:weekly"]
     }
   ]
 }
