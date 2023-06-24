@@ -9,9 +9,7 @@ readme = "README.md"
 python = "^3.9"
 boto3 = "1.20"
 requests = "2.31.0"
-
-[tool.poetry.group.dev.dependencies]
-"aws-cdk.cdk" = "^0.36.1"
+aws-cdk-lib = "2.45.0"
 
 [build-system]
 requires = ["poetry-core"]
