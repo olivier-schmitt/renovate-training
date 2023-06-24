@@ -1,9 +1,7 @@
-arm_container:
-  image: node:latest
+container: &CONTAINER_TEMPLATE
+  arm_container:
+    dockerfile: .cirrus/Dockerfile
 
-check_task:
-  node_modules_cache:
-    folder: node_modules
-    fingerprint_script: cat yarn.lock
-    populate_script: yarn install
-  test_script: yarn test
+init_task:
+  << : *CONTAINER_TEMPLATE
+  test_script: poetry --version
