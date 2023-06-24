@@ -20,6 +20,14 @@
       "groupSlug": "upgrade-standard-deps",
       "addLabels": ["upgrade-standard"],
       "extends": ["schedule:weekly"]
+    },
+    {
+      "groupName": "Cirrus Docker images upgrade",
+      "matchDatasources": ["docker"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupSlug": "upgrade-build-image-deps",
+      "addLabels": ["upgrade-build-image"],
+      "extends": ["at any time"]
     }
   ]
 }
