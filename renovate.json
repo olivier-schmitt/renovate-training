@@ -9,14 +9,16 @@
       "matchDepNames": ["boto3", "aws-cdk-lib"],
       "matchUpdateTypes": ["patch", "minor"],
       "groupSlug": "upgrade-premium-deps",
-      "addLabels": ["upgrade-premium"]
+      "addLabels": ["upgrade-premium"],
+      "extends": ["schedule:daily"]
     },
     {
       "excludePackageNames": ["boto3", "aws-cdk-lib"],
       "groupName": "Standard dependencies",
       "matchUpdateTypes": ["patch", "minor"],
       "groupSlug": "upgrade-standard-deps",
-      "addLabels": ["upgrade-standard"]
+      "addLabels": ["upgrade-standard"],
+      "extends": ["schedule:weekly"]
     }
   ]
 }
