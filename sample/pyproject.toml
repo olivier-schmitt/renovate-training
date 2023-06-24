@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sample"
+version = "0.1.0"
+description = ""
+authors = ["olivierursushorribilis <ursusossforever@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+boto3 = "^1.26.160"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+"aws-cdk.cdk" = "^0.36.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
