@@ -10,7 +10,8 @@
       "matchUpdateTypes": ["patch", "minor"],
       "groupSlug": "upgrade-premium-deps",
       "addLabels": ["upgrade-premium"],
-      "extends": ["schedule:daily"]
+      "extends": ["schedule:daily"],
+      "automerge": true
     },
     {
       "excludePackageNames": ["boto3", "aws-cdk-lib"],
