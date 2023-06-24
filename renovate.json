@@ -7,9 +7,15 @@
     {
       "matchDepNames": ["boto3", "aws-cdk-lib"],
       "matchUpdateTypes": ["patch", "minor"],
-      "groupName": "Premium Dependencies",
+      "groupName": "Premium Dependencies upgrade (auto-merge)",
       "groupSlug": "upgrade-premium-deps",
-      "addLabels": ["upgrade"]
+      "addLabels": ["upgrade-premium"]
+    },
+    {
+      "excludePackageNames": ["boto3", "aws-cdk-lib"],
+      "groupName": "Standard dependencies",
+      "groupSlug": "upgrade-standard-deps",
+      "addLabels": ["upgrade-standard"]
     }
   ]
 }
