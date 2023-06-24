@@ -27,7 +27,7 @@
       "matchUpdateTypes": ["patch", "minor"],
       "groupSlug": "upgrade-build-image-deps",
       "addLabels": ["upgrade-build-image"],
-      "extends": ["at any time"]
+      "extends": ["schedule:at any time"]
     }
   ]
 }
