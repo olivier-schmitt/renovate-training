@@ -5,11 +5,13 @@
   ],
   "packageRules": [
     {
+      "groupName": "Premium Dependencies upgrade (auto-merge)",
       "matchDepNames": ["boto3", "aws-cdk-lib"],
       "matchUpdateTypes": ["patch", "minor"],
-      "groupName": "Premium Dependencies upgrade (auto-merge)",
       "groupSlug": "upgrade-premium-deps",
-      "addLabels": ["upgrade-premium"]
+      "addLabels": ["upgrade-premium"],
+      "automerge": true,
+      "automergeType":"pr"
     },
     {
       "excludePackageNames": ["boto3", "aws-cdk-lib"],
