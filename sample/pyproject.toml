@@ -7,9 +7,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
-boto3 = "1.26.140"
 requests = "2.31.0"
 aws-cdk-lib = "2.85.0"
+boto3 = "1.26.150"
 
 [build-system]
 requires = ["poetry-core"]
