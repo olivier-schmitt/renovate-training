@@ -8,7 +8,8 @@
       "matchDepNames": ["boto3", "aws-cdk-lib"],
       "matchUpdateTypes": ["patch", "minor"],
       "groupName": "Premium Dependencies",
-      "groupSlug": "upgrade-premium-deps"
+      "groupSlug": "upgrade-premium-deps",
+      "addLabels": ["upgrade"]
     }
   ]
 }

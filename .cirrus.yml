@@ -2,7 +2,16 @@ container: &CONTAINER_TEMPLATE
   arm_container:
     dockerfile: .cirrus/Dockerfile
 
-init_task:
+main_task:
   execution_lock: $CIRRUS_BRANCH
   << : *CONTAINER_TEMPLATE
-  test_script: poetry --version
+  test_script: echo "Main"
+
+
+updrade_task:
+  required_pr_labels: upgrade
+  execution_lock: $CIRRUS_BRANCH
+  << : *CONTAINER_TEMPLATE
+  test_script: echo "Run tests"
+  deploy_script: echo "Deploy"
+  ete_script: echo "End to end tests"
