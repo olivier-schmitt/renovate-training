@@ -3,5 +3,6 @@ container: &CONTAINER_TEMPLATE
     dockerfile: .cirrus/Dockerfile
 
 init_task:
+  execution_lock: $CIRRUS_BRANCH
   << : *CONTAINER_TEMPLATE
   test_script: poetry --version
