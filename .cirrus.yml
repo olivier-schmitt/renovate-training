@@ -8,8 +8,16 @@ main_task:
   test_script: echo "Main"
 
 
-updrade_task:
-  required_pr_labels: upgrade
+updrade_premium_task:
+  required_pr_labels: upgrade-premium
+  execution_lock: $CIRRUS_BRANCH
+  << : *CONTAINER_TEMPLATE
+  test_script: echo "Run tests"
+  deploy_script: echo "Deploy"
+  ete_script: echo "End to end tests"
+
+updrade_standard_task:
+  required_pr_labels: upgrade-standard
   execution_lock: $CIRRUS_BRANCH
   << : *CONTAINER_TEMPLATE
   test_script: echo "Run tests"
