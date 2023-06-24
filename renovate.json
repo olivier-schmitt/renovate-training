@@ -2,5 +2,13 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
+  ],
+  "packageRules": [
+    {
+      "matchDepNames": ["boto3", "aws-cdk-lib"],
+      "matchUpdateTypes": ["patch", "minor"],
+      "groupName": "Premium Dependencies",
+      "groupSlug": "upgrade-premium-deps"
+    }
   ]
 }
