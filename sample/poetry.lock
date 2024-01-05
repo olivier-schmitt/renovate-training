@@ -21,18 +21,18 @@ tests-no-zope = ["cloudpickle", "hypothesis", "mypy (>=1.1.1)", "pympler", "pyte
 
 [[package]]
 name = "aws-cdk-asset-awscli-v1"
-version = "2.2.198"
+version = "2.2.201"
 description = "A library that contains the AWS CLI for use in Lambda Layers"
 category = "main"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "aws-cdk.asset-awscli-v1-2.2.198.tar.gz", hash = "sha256:6a78b63439a2041fea59c73bb751b87b3415d4451e41a61a852b71ad99fa0e6b"},
-    {file = "aws_cdk.asset_awscli_v1-2.2.198-py3-none-any.whl", hash = "sha256:14a1e917a69e59ddbe559f35cf611b2a7421e42c3544cc7a5ab224387d41f3ab"},
+    {file = "aws-cdk.asset-awscli-v1-2.2.201.tar.gz", hash = "sha256:88d1c269fd5cf8c9f6e0464ed22e2d4f269dfd5b36b8c4d37687bdba9c269839"},
+    {file = "aws_cdk.asset_awscli_v1-2.2.201-py3-none-any.whl", hash = "sha256:56fe2ef91d3c8d33559aa32d2130e5f35f23af1fb82f06648ebbc82ffe0a5879"},
 ]
 
 [package.dependencies]
-jsii = ">=1.84.0,<2.0.0"
+jsii = ">=1.91.0,<2.0.0"
 publication = ">=0.0.3"
 typeguard = ">=2.13.3,<2.14.0"
 
@@ -54,82 +54,85 @@ publication = ">=0.0.3"
 typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
-name = "aws-cdk-asset-node-proxy-agent-v5"
-version = "2.0.165"
-description = "@aws-cdk/asset-node-proxy-agent-v5"
+name = "aws-cdk-asset-node-proxy-agent-v6"
+version = "2.0.1"
+description = "@aws-cdk/asset-node-proxy-agent-v6"
 category = "main"
 optional = false
 python-versions = "~=3.7"
 files = [
-    {file = "aws-cdk.asset-node-proxy-agent-v5-2.0.165.tar.gz", hash = "sha256:e1afb5773d185cf5f335e4c2dd8dd09967a5e700b45eddf5559b24d7e665628d"},
-    {file = "aws_cdk.asset_node_proxy_agent_v5-2.0.165-py3-none-any.whl", hash = "sha256:96afc5747276d21fc25a4aacdb361e3b1cb9a53b2a87a2affa20bbfbe87a0c65"},
+    {file = "aws-cdk.asset-node-proxy-agent-v6-2.0.1.tar.gz", hash = "sha256:42cdbc1de2ed3f845e3eb883a72f58fc7e5554c2e0b6fcdb366c159778dce74d"},
+    {file = "aws_cdk.asset_node_proxy_agent_v6-2.0.1-py3-none-any.whl", hash = "sha256:e442673d4f93137ab165b75386761b1d46eea25fc5015e5145ae3afa9da06b6e"},
 ]
 
 [package.dependencies]
-jsii = ">=1.84.0,<2.0.0"
+jsii = ">=1.86.1,<2.0.0"
 publication = ">=0.0.3"
 typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "aws-cdk-lib"
-version = "2.87.0"
+version = "2.118.0"
 description = "Version 2 of the AWS Cloud Development Kit library"
 category = "main"
 optional = false
-python-versions = "~=3.7"
+python-versions = "~=3.8"
 files = [
-    {file = "aws-cdk-lib-2.87.0.tar.gz", hash = "sha256:28092098ebd8e4674cf9ffc6bd6a150645e89f3ddb932908180e04e939bbf2de"},
-    {file = "aws_cdk_lib-2.87.0-py3-none-any.whl", hash = "sha256:3c296461871421b24a3d5ace52764a0f2503d8956e6f8aa7df3111918e137be7"},
+    {file = "aws-cdk-lib-2.118.0.tar.gz", hash = "sha256:8889e25aa0de3c674f31fe9a8666858c3f6a3024b9db0fbddcdb3775897d972d"},
+    {file = "aws_cdk_lib-2.118.0-py3-none-any.whl", hash = "sha256:a9a015bc05ca46cca00e96442b9547d2cd4ffde79941381b864daf7115139944"},
 ]
 
 [package.dependencies]
-"aws-cdk.asset-awscli-v1" = ">=2.2.177,<3.0.0"
-"aws-cdk.asset-kubectl-v20" = ">=2.1.1,<3.0.0"
-"aws-cdk.asset-node-proxy-agent-v5" = ">=2.0.148,<3.0.0"
+"aws-cdk.asset-awscli-v1" = ">=2.2.201,<3.0.0"
+"aws-cdk.asset-kubectl-v20" = ">=2.1.2,<3.0.0"
+"aws-cdk.asset-node-proxy-agent-v6" = ">=2.0.1,<3.0.0"
 constructs = ">=10.0.0,<11.0.0"
-jsii = ">=1.82.0,<2.0.0"
+jsii = ">=1.93.0,<2.0.0"
 publication = ">=0.0.3"
 typeguard = ">=2.13.3,<2.14.0"
 
 [[package]]
 name = "boto3"
-version = "1.28.1"
+version = "1.34.14"
 description = "The AWS SDK for Python"
 category = "main"
 optional = false
-python-versions = ">= 3.7"
+python-versions = ">= 3.8"
 files = [
-    {file = "boto3-1.28.1-py3-none-any.whl", hash = "sha256:9923ab006bba749bececc5c8cb0c3dc9bc33c91358774f8ff22096ead373b772"},
-    {file = "boto3-1.28.1.tar.gz", hash = "sha256:12f5ea4a98e8e19c981912ac22bc5d87f1f1d8f8269287eace0dd517c9d23e01"},
+    {file = "boto3-1.34.14-py3-none-any.whl", hash = "sha256:1f94042f4efb5133b6b9b8b3243afc01143a81d21b3197a3afadf5780f97b05d"},
+    {file = "boto3-1.34.14.tar.gz", hash = "sha256:5c1bb487c68120aae236354d81b8a1a55d0aa3395d30748a01825ef90891921e"},
 ]
 
 [package.dependencies]
-botocore = ">=1.31.1,<1.32.0"
+botocore = ">=1.34.14,<1.35.0"
 jmespath = ">=0.7.1,<2.0.0"
-s3transfer = ">=0.6.0,<0.7.0"
+s3transfer = ">=0.10.0,<0.11.0"
 
 [package.extras]
 crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "botocore"
-version = "1.31.1"
+version = "1.34.14"
 description = "Low-level, data-driven core of boto 3."
 category = "main"
 optional = false
-python-versions = ">= 3.7"
+python-versions = ">= 3.8"
 files = [
-    {file = "botocore-1.31.1-py3-none-any.whl", hash = "sha256:62e954b8eb9a404510dd97c4fdfaae25bd0349213a3cd70e937e0634821342f5"},
-    {file = "botocore-1.31.1.tar.gz", hash = "sha256:4c9c58ae286a2ca1f900c9bce285b9efd1f0401648aa54a5026c93ada63ad897"},
+    {file = "botocore-1.34.14-py3-none-any.whl", hash = "sha256:3b592f50f0406e236782a3a0a9ad1c3976060fdb2e04a23d18c3df5b7dfad3e0"},
+    {file = "botocore-1.34.14.tar.gz", hash = "sha256:041bed0852649cab7e4dcd4d87f9d1cc084467fb846e5b60015e014761d96414"},
 ]
 
 [package.dependencies]
 jmespath = ">=0.7.1,<2.0.0"
 python-dateutil = ">=2.1,<3.0.0"
-urllib3 = ">=1.25.4,<1.27"
+urllib3 = [
+    {version = ">=1.25.4,<1.27", markers = "python_version < \"3.10\""},
+    {version = ">=1.25.4,<2.1", markers = "python_version >= \"3.10\""},
+]
 
 [package.extras]
-crt = ["awscrt (==0.16.9)"]
+crt = ["awscrt (==0.19.19)"]
 
 [[package]]
 name = "cattrs"
@@ -261,24 +264,24 @@ files = [
 
 [[package]]
 name = "jsii"
-version = "1.84.0"
+version = "1.93.0"
 description = "Python client for jsii runtime"
 category = "main"
 optional = false
-python-versions = "~=3.7"
+python-versions = "~=3.8"
 files = [
-    {file = "jsii-1.84.0-py3-none-any.whl", hash = "sha256:7748205665d079112721d6eb23a37fa084722ab675f65e8a6514ec908660bd57"},
-    {file = "jsii-1.84.0.tar.gz", hash = "sha256:29f8352525e980e126d5d0fd3510fff9a81a8dbc36249f99d922907f2e6bf4c3"},
+    {file = "jsii-1.93.0-py3-none-any.whl", hash = "sha256:d3cba8c18f2bb4eb94aa41a202b4eb14a561a3a347ed086294a6c9d5d17c90d6"},
+    {file = "jsii-1.93.0.tar.gz", hash = "sha256:15349b329b79699c88a6041c8987a4470e6cfa544e5c1e4a126bc5be9f48a623"},
 ]
 
 [package.dependencies]
 attrs = ">=21.2,<24.0"
-cattrs = ">=1.8,<23.2"
+cattrs = ">=1.8,<23.3"
 importlib-resources = ">=5.2.0"
 publication = ">=0.0.3"
 python-dateutil = "*"
 typeguard = ">=2.13.3,<2.14.0"
-typing-extensions = ">=3.7,<5.0"
+typing-extensions = ">=3.8,<5.0"
 
 [[package]]
 name = "publication"
@@ -381,21 +384,21 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
 name = "s3transfer"
-version = "0.6.1"
+version = "0.10.0"
 description = "An Amazon S3 Transfer Manager"
 category = "main"
 optional = false
-python-versions = ">= 3.7"
+python-versions = ">= 3.8"
 files = [
-    {file = "s3transfer-0.6.1-py3-none-any.whl", hash = "sha256:3c0da2d074bf35d6870ef157158641178a4204a6e689e82546083e31e0311346"},
-    {file = "s3transfer-0.6.1.tar.gz", hash = "sha256:640bb492711f4c0c0905e1f62b6aaeb771881935ad27884852411f8e9cacbca9"},
+    {file = "s3transfer-0.10.0-py3-none-any.whl", hash = "sha256:3cdb40f5cfa6966e812209d0994f2a4709b561c88e90cf00c2696d2df4e56b2e"},
+    {file = "s3transfer-0.10.0.tar.gz", hash = "sha256:d0c8bbf672d5eebbe4e57945e23b972d963f07d82f661cabf678a5c88831595b"},
 ]
 
 [package.dependencies]
-botocore = ">=1.12.36,<2.0a.0"
+botocore = ">=1.33.2,<2.0a.0"
 
 [package.extras]
-crt = ["botocore[crt] (>=1.20.29,<2.0a.0)"]
+crt = ["botocore[crt] (>=1.33.2,<2.0a.0)"]
 
 [[package]]
 name = "six"
@@ -473,4 +476,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "b47cf7dc9ea9dd3140eb2d3967cc270ca58aae11e7da8df5cb0bf95d0172fd9c"
+content-hash = "a78e92b47e4aff283e8c2670a05f864c3f29bdfd71731c0508599426980f42b9"
