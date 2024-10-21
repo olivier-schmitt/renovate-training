@@ -1,4 +1,4 @@
-FROM amazonlinux:2023.0.20230614.0
+FROM amazonlinux:2023.6.20241010.0
 
 RUN yum update -y
 RUN yum install -y pip
